@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,19 +8,13 @@ namespace webMa.Controllers
 {
   public class HomeController : Controller
   {
-    public ActionResult Index()
+    public ActionResult Login()
     {
       return View();
     }
 
-    public ActionResult About()
-    {
-      ViewBag.Message = "Your application description page.";
 
-      return View();
-    }
-
-    public ActionResult Contact()
+    public ActionResult Menu()
     {
       ViewBag.Message = "Your contact page.";
 

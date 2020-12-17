@@ -1,0 +1,20 @@
+@{
+  ViewBag.Title = "Home Page";
+}
+
+<div>
+  <div class="Container-form">
+    <div class="formulario">
+      <h2>Iniciar sesi&oacute;n</h2>
+      <form action="index.html" method="post">
+        <input id="Usuario" type="text" placeholder="Usuario" required>
+        <input id="Password" type="password" placeholder="Contrase&ntilde;a" required>
+        <input type="button" value="Iniciar sesi&oacute;n" onclick="sendRequest()">
+      </form>
+    </div>
+  </div>
+</div>
+
+@section scripts {
+
+}

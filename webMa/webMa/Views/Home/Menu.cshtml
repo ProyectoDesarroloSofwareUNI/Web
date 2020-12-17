@@ -1,0 +1,137 @@
+@{
+  ViewBag.Title = "Contact";
+}
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    z-index: 2;
+    display: block;
+  }
+
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    width: 15%;
+    height: 93%;
+    opacity: 0.9;
+    padding: 3px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+    .nav-main ul.nav-menu li {
+      padding: 12px;
+      border-bottom: 2px solid lightgray;
+      margin-bottom: 0px;
+      font-size: 16px;
+    }
+
+    .nav-main ul.nav-menu.show {
+      transform: translateX(0%);
+    }
+
+  #Menu {
+    position: absolute;
+    background: #9294a7;
+    color: #36363b;
+    border: none;
+    width: 15%;
+    height: 7%;
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid lightgray;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+    text-align: center;
+  }
+
+    #Menu:hover {
+      background: #52525b;
+      color: white;
+    }
+
+  .nav-main ul.nav-menu li:hover {
+    background: #ebebef;
+    color: #3d3a3a;
+  }
+
+  #Nombre {
+    position: absolute;
+    background: #282a31c7;
+    color: white;
+    border: none;
+    width: 85%;
+    height: 7%;
+    padding: 10px;
+    top: 0px;
+    right: 0px;
+    border-bottom: 2px solid lightgray;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+</style>
+<div id="Nombre">
+  <strong>MATRICULA</strong>
+</div>
+<div class="menu-btn" id="Menu">Men&uacute;</div>
+<div class="container">
+  <nav class="nav-main">
+    <ul class="nav-menu">
+      <a href="#">
+        <li>Datos Personales</li>
+      </a>
+      <a href="#">
+        <li>Horario</li>
+      </a>
+      <a href="#">
+        <li>Cursos Disponibles</li>
+      </a>
+      <a href="#">
+        <li>Matr&iacute;cula</li>
+      </a>
+      <a href="http://localhost:2923/Home/Login">
+        <li>Cerrar Sesi&oacute;n</li>
+      </a>
+    </ul>
+  </nav>
+</div>
+<script>
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        document.querySelector(".nav-menu").classList.toggle("show");
+      });
+</script>

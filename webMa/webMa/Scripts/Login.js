@@ -20,7 +20,7 @@ function sendRequest() {
       console.log(Validar.Exist_usuario)
       if (Validar.Exist_usuario == true)
       {
-        window.location.replace("Home/About.cshtml");  
+        window.location.replace("http://localhost:2923/Home/Menu");  
       }
       else
         alert("Contraseña Incorecta");
