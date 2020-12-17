@@ -20,5 +20,12 @@ namespace webMa.Controllers
 
       return View();
     }
+    public ActionResult Menu_Administrador()
+    {
+      ViewBag.Message = "Your contact page.";
+
+      return View();
+    }
+    
   }
 }
