@@ -23,7 +23,7 @@ function sendRequest() {
         window.location.replace("http://localhost:2923/Home/Menu");  
       }
       else
-        alert("Contraseña Incorecta");
+        alert("Usuario Incorecto");
     }
   }).done(function (data) {
     $('#value1').text(data);
