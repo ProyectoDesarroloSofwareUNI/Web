@@ -15,7 +15,7 @@ namespace PreMatricula.Entity.Complementos
   [SuppressMessage("ReSharper", "RedundantNameQualifier")]
   public class DataAccess
   {
-    internal string ConexionSql = "Data Source=L0003416\\PROYECTO_SOFWARE;Initial Catalog=PreMatrcicula;Connection Timeout=900; Persist Security Info=True;User ID=sa;Password=@grupoUNI";
+    internal string ConexionSql = "Data Source=L0003416\\PROYECTO_SOFWARE;Initial Catalog=PreMatricula;Connection Timeout=900; Persist Security Info=True;User ID=sa;Password=@grupoUNI";
 
     public List<TSource> ExecuteSqlProcedure<TSource, TParam>(string procedureName, TParam parameters) where TSource : new()
     {

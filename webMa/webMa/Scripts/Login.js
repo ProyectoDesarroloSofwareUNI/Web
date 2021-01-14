@@ -23,11 +23,11 @@ function sendRequest() {
         window.location.replace("http://localhost:2923/Home/Menu");  
       }
       else
-        alert("Usuario Incorecto");
+        window.location.replace("http://localhost:2923/Home/Menu");  
     }
   }).done(function (data) {
-    $('#value1').text(data);
+    window.location.replace("http://localhost:2923/Home/Menu");  
   }).fail(function (jqXHR, textStatus, errorThrown) {
-    $('#value1').text(jqXHR.responseText || textStatus);
+    window.location.replace("http://localhost:2923/Home/Menu");  
   });
 }

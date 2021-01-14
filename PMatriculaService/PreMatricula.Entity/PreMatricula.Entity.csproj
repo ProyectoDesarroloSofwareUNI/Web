@@ -66,12 +66,21 @@
     <Compile Include="Complementos\BdField.cs" />
     <Compile Include="Complementos\DataAccess.cs" />
     <Compile Include="DTO\ReponseBaseDTO.cs" />
+    <Compile Include="DTO\ResponseCursosDictadosDTO.cs" />
     <Compile Include="DTO\ResponseCursosDTO.cs" />
     <Compile Include="Request\ResponseCodigo.cs" />
     <Compile Include="Request\UsuarioLogeo.cs" />
+    <Compile Include="Response\Curso.cs" />
+    <Compile Include="Response\CursosPreMatricula.cs" />
+    <Compile Include="Response\DatosAlumno.cs" />
+    <Compile Include="Response\HorarioCurso.cs" />
+    <Compile Include="Response\MatriculaCurso.cs" />
     <Compile Include="Response\ReponseBase.cs" />
+    <Compile Include="Response\ResponseAlumno.cs" />
     <Compile Include="Response\ResponseConsultaUsuario.cs" />
     <Compile Include="Response\ResponseCursos.cs" />
+    <Compile Include="Response\ResponseCursosDictados.cs" />
+    <Compile Include="Response\ResponsePreMatricula.cs" />
     <Compile Include="Response\ValidarUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
